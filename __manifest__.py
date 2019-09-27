@@ -30,10 +30,11 @@
         'account',
     ],
     'data': [
-        'security/project_project.xml',
-        'views/sale_order.xml',
-        'views/res_partner.xml',
-        'views/project_task.xml',
         'reports/sale_order.xml',
+        'security/project_project.xml',
+        'views/project_project.xml',
+        'views/project_task.xml',
+        'views/res_partner.xml',
+        'views/sale_order.xml',
     ]
 }
