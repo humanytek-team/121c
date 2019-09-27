@@ -19,7 +19,7 @@ class ProjectTask(models.Model):
     
     @api.onchange('stage_id')
     def _on_change_stage(self):
-        if self.stage_id.sequence > self._origin.stage_id.sequence:
+        if self._origin.stage_id.name == 'WIP' and self.stage_id.name == 'Review':
             return {
                 'warning': {
                     'title': 'Stage advanced',
