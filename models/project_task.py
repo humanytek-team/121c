@@ -22,7 +22,7 @@ class ProjectTask(models.Model):
         if self._origin.stage_id.name == 'WIP' and self.stage_id.name == 'Review':
             return {
                 'warning': {
-                    'title': 'Stage advanced',
-                    'message': 'Do you register your hours?',
+                    'title': _('Stage advanced'),
+                    'message': _('Did you register your hours?'),
                 }
             }
