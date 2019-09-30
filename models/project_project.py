@@ -12,3 +12,7 @@ class ProjectProject(models.Model):
     def toggle_active2(self):
         for r in self:
             r.active2 = not r.active2
+            if not r.active2:
+                r.sudo().message_follower_ids.unlink()
+                for task in r.task_ids:
+                    task.sudo().message_follower_ids.unlink()
