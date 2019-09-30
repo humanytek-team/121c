@@ -26,3 +26,9 @@ class ProjectTask(models.Model):
                     'message': _('Did you register your hours?'),
                 }
             }
+    
+    @api.model
+    def create(self, vals):
+        task = super(ProjectTask, self).create(vals)
+        task.sudo().message_follower_ids.unlink()
+        return task
