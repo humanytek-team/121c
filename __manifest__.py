@@ -28,6 +28,7 @@
         'project',
         'sale',
         'account',
+        'mail',
     ],
     'data': [
         'reports/sale_order.xml',
