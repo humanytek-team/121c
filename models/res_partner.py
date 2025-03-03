@@ -1,8 +1,9 @@
 from odoo import fields, models
 
+
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     require_po = fields.Boolean(
-        string='Require PO',
+        string="Require PO",
     )

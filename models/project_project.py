@@ -2,7 +2,7 @@ from odoo import api, fields, models, _
 
 
 class ProjectProject(models.Model):
-    _inherit = 'project.project'
+    _inherit = "project.project"
 
     active2 = fields.Boolean(
         default=True,

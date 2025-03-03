@@ -19,23 +19,23 @@
 ##############################################################################
 
 {
-    'name': '121C',
-    'version': '17.0.1.1.0',
-    'author': 'Humanytek',
-    'website': 'http://humanytek.com',
-    'depends': [
-        'hr_timesheet',
-        'project',
-        'sale',
-        'account',
-        'mail',
+    "name": "121C",
+    "version": "1.0",
+    "author": "Humanytek",
+    "website": "http://humanytek.com",
+    "depends": [
+        "hr_timesheet",
+        "project",
+        "sale",
+        "account",
+        "mail",
     ],
-    'data': [
-        'reports/sale_order.xml',
-        'security/project_project.xml',
-        'views/project_project.xml',
-        'views/project_task.xml',
-        'views/res_partner.xml',
-        'views/sale_order.xml',
-    ]
+    "data": [
+        "reports/sale_order.xml",
+        "security/project_project.xml",
+        "views/project_project.xml",
+        "views/project_task.xml",
+        "views/res_partner.xml",
+        "views/sale_order.xml",
+    ],
 }
